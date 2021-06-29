@@ -58,6 +58,7 @@ namespace LTMCBLAB6
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.ShowDialog();
             ftpClient.download($"lab6/files/{textBox1.Text}",@sfd.FileName);
+            MessageBox.Show("dowload completed");
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
